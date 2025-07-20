@@ -14,7 +14,7 @@ rustPlatform.buildRustPackage {
     owner = "zjm54321";
     repo = "Anyrun-Weather";
     rev = "v0.1.2";
-    hash = "sha256-i8+J0185A4v7kuYCyID0Y0psqZMwsz7ZLl1TS4Xwl+s=";
+    hash = "sha256-h5tnOSNFJo7GkU+zl5DIs3Zit6cfq2bRGXKTHAiFRTA=";
   };
 
   cargoHash = "sha256-IikP2NpEfRmbFUL7hVsEZ/0Ge9QVM8W2f8tqM5vdyPI=";
