@@ -17,5 +17,5 @@
   overlays = import ./overlays; # nixpkgs overlays
 
   anyrun-weather = pkgs.callPackage ./pkgs/Anyrun-Weather { };
-
+  anyrun-qalculate = pkgs.callPackage ./pkgs/Anyrun-Qalculate { };
 }
