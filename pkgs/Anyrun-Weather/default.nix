@@ -4,11 +4,9 @@
   fetchFromGitHub,
   pkg-config,
   openssl,
-  stdenv,
-  darwin,
 }:
 
-rustPlatform.buildRustPackage rec {
+rustPlatform.buildRustPackage {
   pname = "anyrun-weather";
   version = "0.1.2";
 
@@ -16,7 +14,7 @@ rustPlatform.buildRustPackage rec {
     owner = "zjm54321";
     repo = "Anyrun-Weather";
     rev = "v0.1.2";
-    hash = "sha256-+t9hsgJAs9LvYg4Ts0JyXwyvigpiXF2/B0H0SgzmNMs=";
+    hash = "sha256-vt99xS3U8t9lb0bXFYTObsgQ4AwCEs7lrGOMtfeeXwo=";
   };
 
   cargoHash = "sha256-IikP2NpEfRmbFUL7hVsEZ/0Ge9QVM8W2f8tqM5vdyPI=";
@@ -40,7 +38,7 @@ rustPlatform.buildRustPackage rec {
   meta = with lib; {
     description = "OpenWeatherApi plugin for Anyrun launcher";
     homepage = "https://github.com/Matipolit/Anyrun-Weather";
-    maintainers = with maintainers; [ "zjm54321" ];
+    maintainers = [ "zjm54321" ];
     platforms = platforms.linux;
   };
 }
