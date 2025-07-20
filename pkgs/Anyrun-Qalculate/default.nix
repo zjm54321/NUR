@@ -31,6 +31,10 @@ rustPlatform.buildRustPackage {
   buildType = "release";
   cargoBuildFlags = [ "--lib" ];
 
+  postInstall = ''
+  mv $out/lib/libqalculate.so $out/lib/libanyrun_qalculate.so
+  '';
+
   meta = with lib; {
     description = "Qalculate plugin for Anyrun launcher";
     homepage = "https://gitlab.com/udragg/anyrun-qalculate";
