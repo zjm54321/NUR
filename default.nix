@@ -16,4 +16,6 @@
   modules = import ./modules; # NixOS modules
   overlays = import ./overlays; # nixpkgs overlays
 
+  anyrun-weather = pkgs.callPackage ./pkgs/Anyrun-Weather { };
+
 }
