@@ -38,6 +38,7 @@ rustPlatform.buildRustPackage {
   meta = with lib; {
     description = "Qalculate plugin for Anyrun launcher";
     homepage = "https://gitlab.com/udragg/anyrun-qalculate";
+    license = licenses.gpl3Only;
     maintainers = [ "zjm54321" ];
     platforms = platforms.linux;
   };
