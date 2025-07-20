@@ -40,7 +40,7 @@ rustPlatform.buildRustPackage rec {
   meta = with lib; {
     description = "OpenWeatherApi plugin for Anyrun launcher";
     homepage = "https://github.com/Matipolit/Anyrun-Weather";
-    maintainers = [ maintainers.zjm54321 ];
+    maintainers = with maintainers; [ "zjm54321" ];
     platforms = platforms.linux;
   };
 }
