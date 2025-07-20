@@ -10,16 +10,16 @@
 
 rustPlatform.buildRustPackage rec {
   pname = "anyrun-weather";
-  version = "0.1.0";
+  version = "0.1.2";
 
   src = fetchFromGitHub {
-    owner = "Matipolit";
+    owner = "zjm54321";
     repo = "Anyrun-Weather";
-    rev = "main"; # 使用最新的 main 分支，因为没有版本标签
-    hash = "sha256-nVD4C/mVjtDn9zLHv8GpbJ2No+/ISqczE6/l15hQ9cs=";
+    rev = "v0.1.2";
+    hash = "sha256-+t9hsgJAs9LvYg4Ts0JyXwyvigpiXF2/B0H0SgzmNMs=";
   };
 
-  cargoHash = "sha256-/V+h3yjkvYCJevZUWsN8MhAtf1GV/GkvD+3/vFeLfiE=";
+  cargoHash = "sha256-IikP2NpEfRmbFUL7hVsEZ/0Ge9QVM8W2f8tqM5vdyPI=";
 
   nativeBuildInputs = [
     pkg-config
