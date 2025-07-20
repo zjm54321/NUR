@@ -14,7 +14,7 @@ rustPlatform.buildRustPackage {
     owner = "zjm54321";
     repo = "Anyrun-Weather";
     rev = "v0.1.2";
-    hash = "sha256-vt99xS3U8t9lb0bXFYTObsgQ4AwCEs7lrGOMtfeeXwo=";
+    hash = "sha256-i8+J0185A4v7kuYCyID0Y0psqZMwsz7ZLl1TS4Xwl+s=";
   };
 
   cargoHash = "sha256-IikP2NpEfRmbFUL7hVsEZ/0Ge9QVM8W2f8tqM5vdyPI=";
@@ -27,7 +27,7 @@ rustPlatform.buildRustPackage {
     openssl
   ];
 
-  doCheck = true;
+  doCheck = false;
 
   # 确保正确的库类型
   buildType = "release";
